@@ -341,7 +341,6 @@ rhierMnlRwMixture_SR <- function (Data, Prior, Mcmc, nvar_c, flag)
     #Compute gradient at beta_MLE pooled
     GRAD_betapooled = mnlgrad_mod(betastarpooled,ypooled,Xpooled)
     #Compute Jacobian & functions of it (making use of "startobeta"-function)
-    require(pracma)
     Jacobian_atMLE = jacobian(startobeta, betastarpooled) ###constant across k
     #stack hessian by columns
     for(k in 1:nvar){

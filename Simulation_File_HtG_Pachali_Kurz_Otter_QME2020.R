@@ -16,6 +16,7 @@ library(bayesm)
 library(tikzDevice)
 library(plyr)
 library(numDeriv)
+library(pracma)
 
 set.seed(77) 
 
